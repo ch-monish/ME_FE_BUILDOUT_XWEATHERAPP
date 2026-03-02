@@ -11,7 +11,7 @@ const WeatherApp = () => {
 
     setLoading(true);
     setWeather(null); // Clear previous results
-
+ 
     try {
       const response = await fetch(
         `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`
