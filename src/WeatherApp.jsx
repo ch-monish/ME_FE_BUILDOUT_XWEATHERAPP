@@ -28,13 +28,13 @@ const WeatherApp = () => {
         condition: data.current.condition.text,
         wind: data.current.wind_kph,
       });
-    } catch (error) {
-      alert('Failed to fetch weather data');
+    } catch (e) {
+      alert('Failed to fetch weather data'+e);
     } finally {
       setLoading(false);
     }
   };
-
+  
   return (
     <div className="weather-app">
       <input 
